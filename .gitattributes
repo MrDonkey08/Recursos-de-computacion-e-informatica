@@ -14,19 +14,6 @@
 # - Template generator: https://www.toptal.com/developers/gitignore
 #   - Templates: https://github.com/toptal/gitignore/tree/master
 
-
-## Proteus ##
-*.workspace
-
-## Boole Deusto ##
-*.sco.txt
-
-## WinCpl ##
-*.abs
-*.lst
-*.pla
-*.sim
-
 ### IDEs: Team IDEs and text editors ###
 
 ## VisualStudioCode ##
