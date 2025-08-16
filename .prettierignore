@@ -1,0 +1,368 @@
+# NOTE: Make sure to check gitignore documentation in order to work with
+# gitignore files
+#
+# https://git-scm.com/docs/gitignore#_pattern_format
+
+# TODO: Make sure to customize this file before using it
+
+### REPOSITORY: Specific repository ignores ###
+
+# TODO: Make sure to add ignores for technologies used in the  repository
+# You can add them using the following resources:
+#
+# - Templates: https://github.com/github/gitignore
+# - Template generator: https://www.toptal.com/developers/gitignore
+#   - Templates: https://github.com/toptal/gitignore/tree/master
+
+### IDEs: Team IDEs and text editors ###
+
+## VisualStudioCode ##
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+## VisualStudioCode Patch ##
+# Ignore all local history of files
+.history
+.ionide
+
+# End of https://www.toptal.com/developers/gitignore/api/vim
+
+### Obsidian ###
+.obsidian/
+*.trash
+
+## CodeBlocks ##
+# specific to CodeBlocks IDE
+*.layout
+*.depend
+# generated directories
+bin/
+obj/
+
+# End of https://www.toptal.com/developers/gitignore/api/codeblocks
+
+## Vim ##
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
+
+### SECURITY: In order to reduce risks ###
+
+## Credentials ##
+
+# Environment variables #
+.env
+.env.*
+*.env.local
+
+# SSH keys #
+**/.ssh/id_*
+**/.ssh/*_id_*
+**/.ssh/known_hosts
+
+# End of https://www.toptal.com/developers/gitignore/api/ssh
+
+# AWS credentials #
+~/.aws/*
+.aws/credentials
+.aws/config
+
+# Google Cloud credentials
+~/.credentials
+
+# Credentials and tokens
+*.token
+*.secrets
+*.secret
+*.secret.*
+*.password
+*.auth
+*.cred
+*.credentials
+*.vault
+*.vault_pass
+
+# Secret configuration files
+*.key
+*.pem
+*.cert
+*.crt
+*.pfx
+*.p12
+*.asc
+*.gpg
+*.csr
+
+# Custom secret config
+my_private_config.json
+secret_config.js
+
+## Infrastructure Secrets ##
+
+# Docker & Kubernetes #
+docker-compose.override.yml
+secrets.yml
+*.secret.yaml
+*.secret.json
+
+# Terraform #
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Ansible #
+*.vault
+*.vault_pass
+
+## Logs and Runtime Files ##
+
+*.log
+*.pid
+*.sock
+*.lock
+
+## Editor Files ##
+*.swp
+*.swo
+*.bak
+
+## OS Files: Windows, Linux and macOS ##
+# Linux #
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+# macOS #
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# macOS Patch #
+# iCloud generated files
+*.icloud
+
+# Windows #
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos
+
+## Local Databases / Dumps ##
+
+## Database ##
+*.accdb
+*.db
+*.dbf
+*.mdb
+*.pdb
+*.sql
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# End of https://www.toptal.com/developers/gitignore/api/database
+
+## Temp  ##
+
+*~
+*.old
+*.orig
+
+## Backup ##
+*.backup
+*.bak
+*.bkp
+*.gho
+*.ori
+*.orig
+*.tmp
+
+# End of https://www.toptal.com/developers/gitignore/api/backup
+
+### PERFORMANCE: To reduce unnecesary file checking (e.g, binaries) ###
+
+## Compiled programs ##
+**/bin/
+
+## Executable ##
+*.app
+#*.bat
+*.cgi
+*.com
+*.exe
+*.gadget
+*.jar
+*.pif
+*.vb
+*.wsf
+
+# End of https://www.toptal.com/developers/gitignore/api/executable
+
+## Extensionless Executables ##
+# WARNING: Ignoring extensionless files can lead to issues—many important files
+# like Dockerfile, Makefile, README, etc., have no extension.
+# Uncomment below to ignore all extensionless files (often used for ignoring
+# binary blobs or Unix scripts)
+#*
+#!/**/
+#!*.*
+
+## Archives & Compressed ##
+
+# Archives #
+*.pkg
+*.iso
+*.sfark
+*.sit
+*.sitx
+*.tar
+*.tar*
+
+# Package managers
+# Red Hat Package Manager
+*.rpm
+# Debian package
+*.deb
+# MicroSoft Installer
+*.msi
+*.msm
+*.msp
+# Mozilla package installer
+*.xpi
+# Ruby Package
+*.gem
+
+# Compressed #
+*.7z
+*.bz2
+*.F
+*.gz
+*.lz
+*.lzma
+*.lzo
+*.rz
+*.sz
+*.xz
+*.z
+*.Z
+*.infl
+*.??_
+
+# Compressed Archives #
+*.rar
+*.tgz
+*.zip
+*.zipx
+*.?Q?
+*.?Z?
+
+## Office ##
+#
+# Docs
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+# *.pdf
+
+# LibreOffice locks
+.~lock.*#
+
+# Microsoft Office
+*.tmp
+
+## Backup
+Backup of *.doc*
+*.xlk
+*.~vsd*
+
+## Temporary
+~$*.doc*
+~$*.xls*
+~$*.ppt*
+# Visio autosave temporary files
+*.~vsd*

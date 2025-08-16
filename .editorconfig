@@ -1,0 +1,45 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# 4-space indentation
+[*.{cs,java,php,py,rs}]
+indent_style = space
+indent_size = 4
+
+# 2-space indentation
+[*.{css,env,htm,html,js,jsx,json,jsonc,md,mdx,sass,scss,sql,ts,tsx,toml,xml,yaml,yml}]
+indent_style = space
+indent_size = 2
+
+# Tab indentation
+[Makefile,*.{bib,bash,c,cpp,fish,go,h,sh,tex,zsh},*{profile}]
+indent_style = tab
+
+# Shell scripts
+[*.{bash,fish,sh,zsh}]
+# shell_variant      = posix
+binary_next_line   = true
+switch_case_indent = true
+space_redirects    = true
+keep_padding       = true
+function_next_line = true
+
+## Windows files
+
+# Windows-Style newlines
+[*.{bat,cmd,ps,ps1,pyw}]
+end_of_line = crlf
+
+# 4 space indentation
+[*.{pyw}]
+indent_style = space
+indent_size = 4
+
+
+[*.{bat,cmd,ps,ps1}]
+indent_style = tab
